@@ -1,2 +1,2 @@
-# holbertonschool-low_level_programming
-# holbertonschool-low_level_programming
+This is my directory for my Holberton projects about C.
+
