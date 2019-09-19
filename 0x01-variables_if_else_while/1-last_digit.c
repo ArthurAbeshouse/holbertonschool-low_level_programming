@@ -22,5 +22,6 @@ int main(void)
 	else
 		printf("Last digit of %i is %i and is less than 6\n", n, l);
 
+	putchar('\n');
 	return (0);
 }
