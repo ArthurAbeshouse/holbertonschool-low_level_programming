@@ -1,6 +1,6 @@
 #include <stdlib.h>
 #include <time.h>
-#include <unistd.h>
+#include <stdio.h>
 /**
 * main - uses if statements to determine if n is greater than or less than 0.
 *
@@ -14,15 +14,15 @@ int main(void)
 	n = rand() - RAND_MAX / 2;
 	if (n > 0)
 	{
-		printf("%d is positive", n);
+		printf("%i is positive\n", n);
 	}
 	else if (n < 0)
 	{
-		printf("%d is negative", n);
+		printf("%i is negative\n", n);
 	}
 	else
 	{
-		printf("0 is zero");
+		printf("%i is zero\n", n);
 	}
 	return (0);
 }
