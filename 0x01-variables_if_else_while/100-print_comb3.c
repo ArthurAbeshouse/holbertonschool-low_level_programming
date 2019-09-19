@@ -11,7 +11,7 @@ int main(void)
 
 	x = 0;
 
-	for (x = 0; x <= 99; x++)
+	for (x = 0; x < 100; x++)
 	{
 		y = x % 10;
 		z = x / 10;
