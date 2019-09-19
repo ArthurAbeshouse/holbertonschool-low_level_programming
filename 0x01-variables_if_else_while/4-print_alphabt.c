@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <time.h>
 /**
  * main - "putschar" prints the english alphabet in lowercase, except q & e
  *
@@ -14,7 +13,7 @@ int main(void)
 	{
 		if (ch != 'q' && ch != 'e')
 		{
-		putchar(ch);
+			putchar(ch);
 		}
 	}
 
