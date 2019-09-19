@@ -4,7 +4,7 @@
 /**
 * main - uses if statements to determine if n is greater than or less than 0.
 *
-* Return: Always 1 (Success)
+* Return: Always 0 (Success)
 */
 int main(void)
 {
