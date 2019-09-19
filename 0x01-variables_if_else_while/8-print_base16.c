@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 /**
- * main - uses "putschar" to print the english alphabet in lowercase, backwards
+ * main - uses "putschar" to print all the numbers of base 16 in lowercase
  *
  * Return: Always 0 (Success)
  */
