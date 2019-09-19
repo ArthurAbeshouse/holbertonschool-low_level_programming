@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 /**
-* main - uses "putschar" to print the english alphabet in lowercase
+* main - for loop prints all single digit numbers of base 10 starting from 0
 *
 * Return: Always 0 (Success)
 */
