@@ -1,6 +1,5 @@
-#include <unistd.h>
+#include <stdio.h>
 #include <stdlib.h>
-#include <time.h>
 /**
  * main - uses "putschar" to print all the numbers of base 16 in lowercase
  *
@@ -18,6 +17,7 @@ int main(void)
 	{
 		putchar(n);
 	}
+	putchar('\n');
 
 	return (0);
 }
