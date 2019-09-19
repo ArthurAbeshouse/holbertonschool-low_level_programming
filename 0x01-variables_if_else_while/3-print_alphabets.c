@@ -2,10 +2,10 @@
 #include <stdlib.h>
 #include <time.h>
 /**
-* main - uses "putschar" to print the alphabet in lowercase and uppercase
-*
-* Return: Always 0 (Success)
-*/
+ * main - uses "putschar" to print the alphabet in lowercase and uppercase
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
 	char ch;
@@ -19,6 +19,6 @@ int main(void)
 		putchar(ch);
 	}
 	putchar('\n');
-	
+
 	return (0);
 }
