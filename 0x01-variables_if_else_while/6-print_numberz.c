@@ -1,6 +1,5 @@
-#include <unistd.h>
+#include <stdio.h>
 #include <stdlib.h>
-#include <time.h>
 /**
  * main - "putschar" prints all single digit numbers of base 10 starting from 0
  *
