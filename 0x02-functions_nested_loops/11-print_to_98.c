@@ -2,7 +2,6 @@
 /**
  * print_to_98 - check for numbers above and below 98
  * @n: int type
- * Return: return all values including 98
  */
 void print_to_98(int n)
 {
