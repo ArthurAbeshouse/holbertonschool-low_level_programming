@@ -1,5 +1,4 @@
-#include <stdio.h>
-#include <holberton.h>
+#include "holberton.h"
 /**
  * main - Entry Point. Uses only user defined variables to create output
  *
