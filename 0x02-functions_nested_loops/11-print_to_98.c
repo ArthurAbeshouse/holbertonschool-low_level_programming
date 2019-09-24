@@ -1,34 +1,31 @@
 #include <stdio.h>
 /**
- * print_to_98 - check for numbers less than 98
+ * print_to_98 - check for numbers above and below 98
  * @n: int type
  * Return: return all values including 98
  */
 void print_to_98(int n)
 {
-	int m;
-
-	for (m = n; m <= 98; m++)
+	if (n < 98)
 	{
-		if (m != 98)
+		for (; n <= 98; n++)
 		{
-			printf("%d, ", m);
-		}
-		else
-		{
-			printf("%d\n", m);
-		}
-
-	}
-	for (m = n; m >= 98; m--)
-	{
-		if (m != 98)
-		{
-			printf("%d, ", m);
-		}
-		else
-		{
-			printf("%d\n", m);
+			if (n != 98)
+				printf("%d, ", n);
+			else
+				printf("%d\n", n);
 		}
 	}
+	else if (n > 98)
+	{
+		for (; n >= 98; n--)
+		{
+			if (n != 98)
+				printf("%d, ", n);
+			else
+				printf("%d\n", n);
+		}
+	}
+	else
+		printf("98\n");
 }
