@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "holberton.h"
 /**
  * print_to_98 - check for numbers less than 99
  * @n: int type
