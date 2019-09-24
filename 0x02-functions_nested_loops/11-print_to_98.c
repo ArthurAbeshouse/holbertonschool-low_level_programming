@@ -1,37 +1,34 @@
 #include <stdio.h>
-#include "holberton.h"
 /**
- * print_to_98 - check for numbers less than 99
+ * print_to_98 - check for numbers less than 98
  * @n: int type
  * Return: return all values including 98
  */
 void print_to_98(int n)
 {
-	while (n < 99)
+	int m;
+
+	for (m = n; m <= 98; m++)
 	{
-		if (n != 98)
+		if (m != 98)
 		{
-			printf("%d, ", n);
-			n++;
+			printf("%d, ", m);
 		}
 		else
 		{
-			printf("%d\n", n);
-			n++;
+			printf("%d\n", m);
 		}
 
 	}
-	while (n > 99)
+	for (m = n; m >= 98; m--)
 	{
-		if (n != 98)
+		if (m != 98)
 		{
-			printf("%d, ", n);
-			n--;
+			printf("%d, ", m);
 		}
 		else
 		{
-			printf("%d\n", n);
-			n--;
+			printf("%d\n", m);
 		}
 	}
 }
