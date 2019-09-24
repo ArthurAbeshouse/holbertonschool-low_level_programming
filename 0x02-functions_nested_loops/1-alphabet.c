@@ -1,9 +1,8 @@
 #include "holberton.h"
 /**
- * main - uses only user defined variables to create output
+ * print_alphabet - uses only user defined variables to create output
  *
  * Description: prints the alphabet, in lowercase, followed by a new line
- *
  */
 void print_alphabet(void)
 {
