@@ -1,10 +1,12 @@
 #include <stdio.h>
+
 /**
  * main - prints the first 98 numbers
  *
  * Description: fibobnachi numbers starting from one
  * Return: 0
  */
+
 int main(void)
 {
 	long fib1, fib1a, fib1b, fib2, fib2a, fib2b, fib3, fib3a, fib3b;
