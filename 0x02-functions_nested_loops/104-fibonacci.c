@@ -1,4 +1,3 @@
-#include <stdlib.h>
 #include <stdio.h>
 
 /**
@@ -10,43 +9,44 @@
 
 int main(void)
 {
-	long fib1, fib1a, fib1b, fib2, fib2a, fib2b, fib3, fib3a, fib3b;
-	long n = 10000000000;
+	long int a, b, c, d;
+	long int split_a1, split_a2;
+	long int split_b1, split_b2;
+	long int mix, tens, ones;
 
-	fib1 = 0;
-	fib2 = 1;
-	int counter = 1;
-
-	for (counter = 0; counter < 91; counter++)
+	a = 0;
+	b = 1;
+	for (d = 0; d <= 98; d++)
 	{
-		fib3 = fib2 + fib1;
-		fib1 = fib2;
-		fib2 = fib3;
-		printf("%ld, ", fib3);
-	}
-	fib1a = fib1 / n;
-	fib1b = fib1 % n;
-	fib2a = fib2 / n;
-	fib2b = fib2 % n;
-	for (; counter < 98; counter++)
-	{
-		fib3a = fib1a + fib2a;
-		fib3b = fib1b + fib2b;
-		if (fib3b > n)
+		if (d < 91)
 		{
-			fib3b = fib3b % n;
-			fib3a++;
+			c = a + b;
+			a = b;
+			b = c;
+			printf("%ld", c);
+			printf(", ");
 		}
-		if (counter != 97)
+		else if (d == 91)
 		{
-			printf("%ld%ld, ", fib3a, fib3b);
-			fib1a = fib2a;
-			fib1b = fib2b;
-			fib2a = fib3a;
-			fib2b = fib3b;
+			split_a2 = a % 1000000000;
+			split_a1 = a / 1000000000;
+			split_b2 = b % 1000000000;
+			split_b1 = b / 1000000000;
 		}
 		else
-			printf("%ld%ld\n", fib3a, fib3b);
+		{
+			mix = (split_a2 + split_b2) / 1000000000;
+			ones = (split_a2 + split_b2) - mix * 1000000000;
+			tens = (split_a1 + split_b1) + mix;
+			split_a2 = split_b2;
+			split_b2 = ones;
+			split_a1 = split_b1;
+			split_b1 = tens;
+			printf("%ld%ld", tens, ones);
+			if (d != 98)
+				printf(", ");
+		}
 	}
+	putchar('\n');
 	return (0);
 }
