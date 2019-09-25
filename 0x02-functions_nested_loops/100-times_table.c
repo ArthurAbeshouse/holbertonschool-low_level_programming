@@ -28,10 +28,10 @@ void print_times_table(int n)
 			else if ((a * b) <= 99)
 			{
 				_putchar(',');
-                                _putchar(' ');
-                                _putchar(' ');
-                                _putchar(((a * b) / 10) + '0');
-                                _putchar(((a * b) % 10) + '0');
+				_putchar(' ');
+				_putchar(' ');
+				_putchar(((a * b) / 10) + '0');
+				_putchar(((a * b) % 10) + '0');
 			}
 			else
 			{
