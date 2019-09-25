@@ -11,8 +11,8 @@ int main(void)
 {
 	long int fib1 = 0;
 	long int fib2 = 0;
-	long int fib3 = 0;
-	int counter = 0;
+	long int fib3 = 1;
+	long int counter = 0;
 
 	while (fib2 < 4000000)
 	{
