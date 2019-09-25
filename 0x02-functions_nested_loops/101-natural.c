@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include <stdio.h>
 /**
  * main - Program to sum integers
  * Description: check for all natural numbers in range of
