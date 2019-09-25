@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- * print_times_table - tales an input and prints out the times
+ * print_times_table - takes an input and prints out the times
  * @n: int type
  *
  */
@@ -22,8 +22,16 @@ void print_times_table(int n)
 				_putchar(',');
 				_putchar(' ');
 				_putchar(' ');
-				_putchar(((a * b) / 10) + '0');
-				_putchar(((a * b) % 10) + '0');
+				_putchar(' ');
+				_putchar((a * b) + '0');
+			}
+			else if ((a * b) <= 99)
+			{
+				_putchar(',');
+                                _putchar(' ');
+                                _putchar(' ');
+                                _putchar(((a * b) / 10) + '0');
+                                _putchar(((a * b) % 10) + '0');
 			}
 			else
 			{
