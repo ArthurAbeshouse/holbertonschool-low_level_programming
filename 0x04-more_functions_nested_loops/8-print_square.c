@@ -3,22 +3,20 @@
 /**
  * print_square - print hashes in pattern of size
  * @size: int type
- *Return: prints hashes in squares
+ * Return: prints hashes in squares
  */
 void print_square(int size)
 {
 	int a, b;
 
-	a = 0;
-	while (a <= size)
+	for (b = 1; b <= size; b++)
 	{
-		a++;
-		b = 0;
-		_putchar('\n');
-		while (b <= size)
+		for (a = 1; a <= size; a++)
 		{
-			_putchar(35);
-			b++;
+			_putchar('#');
 		}
+		_putchar('\n');
 	}
+	if (size < 1)
+		_putchar('\n');
 }
