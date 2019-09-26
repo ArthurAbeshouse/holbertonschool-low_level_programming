@@ -2,7 +2,7 @@
 
 /**
  * main - print largest prime
- * description: finds the largest prime 
+ * description: finds the largest prime
  * factor of the number 612852475143
  * Return: 0
  */
