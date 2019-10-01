@@ -14,7 +14,7 @@ void print_rev(char *s)
 	{
 
 	}
-	a--; // reads the output from the previous and prints it out
+	a--; /* reads the output from the previous and prints it out */
 	while (s[a] != 0)
 	{
 		_putchar(s[a]);
