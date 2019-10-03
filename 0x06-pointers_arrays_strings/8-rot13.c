@@ -1,4 +1,9 @@
 #include "holberton.h"
+/**
+ * rot13 - encodes a string by rotating the characters 13 spaces
+ * @s: pointer to an array of words
+ * Return: pointer encoded string
+ */
 
 char *rot13(char *s)
 {
