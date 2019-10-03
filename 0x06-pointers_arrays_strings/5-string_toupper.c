@@ -1,10 +1,10 @@
 #include "holberton.h"
 /**
  * string_toupper - converts all lowercase letters of a string to uppercas
- * @c: pointer to the string converter
+ * @s: pointer to the string to convert
  * Return: the converted string
  */
-char *string_toupper(char *)
+char *string_toupper(char *s)
 {
 	int i = 0;
 
