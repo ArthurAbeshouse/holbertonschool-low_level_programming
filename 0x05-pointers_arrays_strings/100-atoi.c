@@ -1,18 +1,5 @@
 #include "holberton.h"
 /**
- * _isdigit - Check for digits (0 through 9)
- * @c: int type param
- * Return: 1 if digit, else 0
- */
-int _isdigit(int c)
-{
-	if (c > 47 && c < 58)
-		return (1);
-
-	return (0);
-}
-
-/**
  * _atoi - program to convert ASCII to integer
  * @s: pointer to array of character
  * Return: Always successful
@@ -20,27 +7,27 @@ int _isdigit(int c)
 
 int _atoi(char *s)
 {
-	int digit;
-	int count = 0;
-	int sign = 1;
-	unsigned int value = 0;
-	unsigned int pos = 1;
+	short boolean;
+	int i, minus, result;
 
-	for (digit = 0; ((s[digit] < '0') || (s[digit] > '9')); digit++)
+	i = minus = result = boolean = 0;
+	minus = -1;
+
+	while (s[i] != '\0')
 	{
-		if (s[digit] == '-')
-			sign *= -1;
+		if (s[i] == '-')
+			minus *= -1;
+
+		if (s[i] >= '0' && s[i] <= '9')
+		{
+			result *= 10;
+			result -= (s[i] - '0');
+			boolean = 1;
+		}
+		else if (boolean == 1)
+			break;
+		i++;
 	}
-	for (; _isdigit(s[digit]); digit++)
-	{
-		count++;
-	}
-	while (count > 0)
-	{
-		value += ((s[digit - 1] - 48) * pos);
-		pos *= 10;
-		count--;
-		digit--;
-	}
-	return (value * sign);
+	result *= minus;
+	return (result);
 }
