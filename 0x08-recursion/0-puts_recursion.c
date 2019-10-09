@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- * _put_recursion - ecursion function to print string
+ * _puts_recursion - ecursion function to print string
  * @s: pointer of char type to input string
  * Return: void
  */
