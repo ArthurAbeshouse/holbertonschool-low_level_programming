@@ -1,4 +1,5 @@
 #include "holberton.h"
+#include <stdio.h>
 /**
  * helper - checks the input number from n to the result
  * @n: number is squared and compared against result
@@ -6,7 +7,7 @@
  * Return: natural square root of number base
  */
 
-int helper (int n, int result)
+int helper(int n, int result)
 {
 	if (n * n == result)
 		return (n);
