@@ -1,7 +1,7 @@
 #include "holberton.h"
 #include <stdio.h>
 /**
- * prime_num_check - checks recursively is the input from 
+ * prime_num_check - checks recursively is the input from
  * is_prime_number is prime.
  * @i: iterator
  * @s: number to check
