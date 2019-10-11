@@ -3,7 +3,7 @@
  * main - program that prints its name
  * @argc: size of argv array and number of command line arguments
  * @argv: An array of size argc
- * Return: 0
+ * Return: Always successful
  */
 
 int main(int argc, char *argv[])
