@@ -3,16 +3,15 @@
 #include <stdio.h>
 /**
  * wordcounter - counts words and the letters in them
- * @str: the string to count
+ * @str: string to count
  * @pos: position of the word to count characters from
- * @firstchar: position of the first letter of the world
+ * @firstchar: position of the first letter of the word
  * if pos = 0, count the number of chars in the word
- * else count the number of words
- * Return: wordcount if pos == 0
+ * else count number of words
+ * Return: wordcount if pos == 0,
  * length of word if pos > 0,
  * position of word if pos > 0 && firstchar > 0
  */
-
 int wordcounter(char *str, int pos, char firstchar)
 {
 	int i, wordcount, charcount, flag;
