@@ -1,5 +1,12 @@
 #include "dog.h"
 #include <stdlib.h>
+/**
+ * *new_dog - function to create new dog struct
+ * @name: struct parameter name
+ * @age: struct parameter age
+ * @owner: struct parameter owner
+ * Return: returns pointer to buffer of datatype dog
+ */
 
 dog_t *new_dog(char *name, float age, char *owner)
 {
