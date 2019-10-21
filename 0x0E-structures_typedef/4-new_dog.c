@@ -1,7 +1,7 @@
 #include "dog.h"
 #include <stdlib.h>
 /**
- * *new_dog - function to create new dog struct
+ * new_dog - function to create new dog struct
  * @name: struct parameter name
  * @age: struct parameter age
  * @owner: struct parameter owner
@@ -24,16 +24,23 @@ dog_t *new_dog(char *name, float age, char *owner)
 	if (newpup == NULL)
 		return (NULL);
 	newpup->name = malloc(namlen * sizeof(newpup->name));
-	if (newpup == NULL)
+	if (newpup->name == NULL)
+	{
+		free(newpup);
 		return (NULL);
+	}
 	for (i = 0; i < namlen; i++)
 		newpup->name[i] = name[i];
 
 	newpup->age = age;
 
 	newpup->owner = malloc(ownlen * sizeof(newpup->owner));
-	if (newpup == NULL)
+	if (newpup->owner == NULL)
+	{
+		free(newpup->name);
+		free(newpup);
 		return (NULL);
+	}
 	for (i = 0; i < ownlen; i++)
 		newpup->owner[i] = owner[i];
 	return (newpup);
