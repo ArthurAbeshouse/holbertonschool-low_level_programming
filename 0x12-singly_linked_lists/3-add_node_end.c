@@ -34,7 +34,7 @@ list_t *add_node_end(list_t **head, const char *str)
 
 	/* adds a new node at the end of a list*/
 	while (temp->next != NULL)
-		tmep = temp->next;
+		temp = temp->next;
 
 	temp->next = first;
 	first->next = NULL;
