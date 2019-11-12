@@ -8,7 +8,7 @@
 
 int create_file(const char *filename, char *text_content)
 {
-	int append_file, len, wr_stat;
+	int append_file, len, wr_stat, shutdwn;
 
 	if (!filename)
 		return (-1);
@@ -25,7 +25,5 @@ int create_file(const char *filename, char *text_content)
 	if (wr_stat == -1 || wr_stat != len)
 		return (-1);
 	close(append_file);
-	if (close == -1)
-		return (-1);
 	return (1);
 }
