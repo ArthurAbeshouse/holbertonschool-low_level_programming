@@ -35,6 +35,10 @@ What you should learn from this project:
 ### [5. Island Perimeter](./5-island_perimeter.py)
 * Technical interview preparation: 
 
+
+### [6. make -f 100-Makefile](./100-Makefile)
+* Requirements:
+
 ---
 
 ## Author
