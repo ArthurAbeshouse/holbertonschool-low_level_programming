@@ -25,7 +25,7 @@ int binary_search(int *array, size_t size, int value)
 
 		half = (left + right) / 2;
 		if (array[half] == value)
-			return half;
+			return (half);
 		else if (array[half] < value)
 			left = half + 1;
 		else
